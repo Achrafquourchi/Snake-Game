@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'VT323', monospace;
+  background-image: url('/images/OIG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#gameBoard {
+  border: white solid 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(23, 23px);
+  grid-template-rows: repeat(23, 23px);
+  margin: 5px;
+  background-color: #00A249;
+}
+
+
+#main-text {
+  position: absolute;
+  top: 70%;
+  color: white;
+  width: 400px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 30px;
+  margin: 0;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#score,
+#highScore {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px 0;
+  background-color: #00A249;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.snake {
+  background-color: white;
+  border: black 1px solid;
+}
+
+.food {
+  background-color: orangered;
+  border: #ffffff 1px solid;
+}
+
+#logo {
+  position: absolute;
+}
