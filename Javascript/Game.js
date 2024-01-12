@@ -26,14 +26,14 @@ function draw() {
 // Draw my snake
 function drawSnake() {
   snake.forEach((elEment) => {
-    const snakeElement = createGameElement("div", "snake");
+    const snakeElement = createDivElement("div", "snake");
     setPosition(snakeElement, elEment);
     gameBoard.appendChild(snakeElement);
   });
 }
 
-// Create a snake || food
-function createGameElement(tag, className) {
+// Create my snake || food
+function createDivElement(tag, className) {
   const element = document.createElement(tag);
   element.className = className;
   return element;
@@ -48,7 +48,7 @@ function setPosition(element, position) {
 // Draw food cube function
 function DrawFood() {
   if (StartingGame) {
-    const foodElement = createGameElement("div", "food");
+    const foodElement = createDivElement("div", "food");
     setPosition(foodElement, food);
     gameBoard.appendChild(foodElement);
   }

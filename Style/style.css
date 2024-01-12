@@ -5,7 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'VT323', monospace;
-  background-image: url('/images/OIG.jpg');
+  background-image: url('./images/OIG.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
