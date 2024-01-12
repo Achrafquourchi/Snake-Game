@@ -62,3 +62,8 @@ body {
 #logo {
   position: absolute;
 }
+.keyBoard img {
+  width: 100px;
+  position: relative;
+  margin-left: 10px;
+}
